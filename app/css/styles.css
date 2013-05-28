@@ -4,16 +4,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
-    padding-top: 40px;
+    padding-top: 40px;   
 }
 
 .panel {
     width: auto;
-    background-color: #F3F4F0;   
-}
-
-.panel .content {
-    border: solid 1px #DDDCC7;
+    background-color: #F3F4F0;    
 }
 
 .facebook {
@@ -43,6 +39,7 @@ h1, h2, h3, h4, h5 {
 .jumbotron p {
     font-size: 24px;
     line-height: 1.25;
+    margin-top: 15px;
 }
 
 .social {
