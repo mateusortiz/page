@@ -20,3 +20,11 @@ var routes = function ($routeProvider) {
 };
 
 webdev.config(routes);
+
+/*
+    Hack to work with facebook API
+*/
+webdev.config(['$httpProvider', function ($httpProvider) {  
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+}]);

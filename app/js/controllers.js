@@ -4,8 +4,13 @@
 
 'use strict';
 
-webdev.controller('HomeCtrl', ['$scope', function ($scope) {
+webdev.controller('HomeCtrl', ['$scope', 'FacebookService', function ($scope, FacebookService) {
 
+    $scope.posts = [];
+    
+    FacebookService.get({}, function (data) {
+        $scope.posts = data;
+    });
     
 }]);
 
