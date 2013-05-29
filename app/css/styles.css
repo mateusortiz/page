@@ -3,10 +3,6 @@ h1, h2, h3, h4, h5 {
 	padding: 0;
 }
 
-.content {
-    padding-top: 40px;   
-}
-
 .panel {
     width: auto;
     background-color: #F3F4F0;    
@@ -28,12 +24,13 @@ h1, h2, h3, h4, h5 {
 
 .jumbotron {
     text-align: center;
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .jumbotron h1 {
-    font-size: 100px;
-    line-height: 1;
+  color: #f4f4f4;
+  font-size: 100px;
+  line-height: 1;
 }
 
 .jumbotron p {
@@ -51,4 +48,57 @@ h1, h2, h3, h4, h5 {
     top: 0; 
     right: 0; 
     border: 0;
+}
+
+.bs-docs-social {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #DDDDDD;
+  border-top: 1px solid #FFFFFF;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bs-docs-social-buttons {
+  list-style: none outside none;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bs-docs-social-buttons li {
+  display: inline-block;
+  line-height: 1;
+  padding: 5px 8px;
+}
+
+.jumbotron:after {
+  background: url("../img/noise.png") repeat scroll center center transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.masthead {
+  color: #FFFFFF;
+  margin-bottom: 0;
+  padding: 70px 0 80px;
+}
+
+.jumbotron {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+  padding: 40px 0;
+  color: #5A5A5A;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+.jumbotron .content {
+  position: relative;
+  z-index: 2;
 }
