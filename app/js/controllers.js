@@ -6,12 +6,10 @@
 
 webdev.controller('HomeCtrl', ['$scope', 'FacebookService', function ($scope, FacebookService) {
 
-    $scope.posts = [];
-        
+    $scope.posts = [];        
     $scope.posts = FacebookService.get();
         
     console.log($scope.posts);
-  
 }]);
 
 
