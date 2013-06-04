@@ -4,16 +4,14 @@
 
 'use strict';
 
-webdev.controller('HomeCtrl', ['$scope', 'FacebookTokenService', 'FacebookGraphService', function ($scope, FacebookTokenService, FacebookGraphService) {
+webdev.controller('HomeCtrl', ['$scope', 'FacebookService', function ($scope, FacebookService) {
 
     $scope.posts = [];
-    
-    FacebookTokenService.get().success(function (data) {
         
-        $scope.posts = FacebookGraphService.get({token: data});
+    $scope.posts = FacebookService.get();
         
-        console.log($scope.posts);
-    });
+    console.log($scope.posts);
+  
 }]);
 
 
