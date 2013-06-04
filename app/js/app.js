@@ -24,7 +24,16 @@ webdev.config(routes);
 /*
     Hack to work with facebook API
 */
-webdev.config(['$httpProvider', function ($httpProvider) {  
+webdev.config(['$httpProvider', function ($httpProvider) {
+    
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
+}]);
+
+/*
+    Response Interceptor
+*/
+webdev.config(['$httpProvider', function ($httpProvider) {
+    
+    $httpProvider.responseInterceptors.push('ErrorService');
 }]);
