@@ -1,5 +1,7 @@
 /*
     This file contains all controllers of the application
+    
+    @author Vitor Vigano
  */
 
 'use strict';
@@ -7,9 +9,11 @@
 webdev.controller('HomeCtrl', ['$scope', 'FacebookService', function ($scope, FacebookService) {
 
     $scope.posts = [];
-    $scope.posts = FacebookService.get();
+    
+    FacebookService.get().success(function (posts) {
         
-    console.log($scope.posts);
+        $scope.posts = posts;
+    });
 }]);
 
 

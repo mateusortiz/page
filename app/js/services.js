@@ -1,15 +1,23 @@
 /*
     This file contains all services of the application
+    
+    @author Vitor Vigano
  */
 
 'use strict';
 
-webdev.factory('FacebookService', ['$resource', function ($resource) {
-       
-    return $resource('http://localhost\\:3000/feeds');
+webdev.factory('FacebookService', ['$http', function ($http) {
     
+    var URL = 'http://localhost:3000/feeds';
+    
+    return {
+        
+        get: function () {
+        
+            return $http.get(URL);
+        }
+    };
 }]);
-
 
 webdev.factory('ErrorService', function ($q) {
 
@@ -17,14 +25,12 @@ webdev.factory('ErrorService', function ($q) {
     
         return promise.then(
             
-            function (response) {
-                // Do nothing
-                console.log('SUCESSO');
+            function onSuccess(response) {
+                // Do nothing                
                 return response;
             },
-            function (response) {
-                // Error
-                console.log('ERRO');
+            function onError(response) {
+                // Error                
                 return $q.reject(response);
             }
         );
