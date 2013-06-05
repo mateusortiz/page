@@ -1,8 +1,4 @@
-/*
-    This file contains all controllers of the application
-    
-    @author Vitor Vigano
- */
+//This file contains all controllers of the application
 
 'use strict';
 
