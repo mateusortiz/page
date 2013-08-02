@@ -102,3 +102,34 @@ h1, h2, h3, h4, h5 {
   position: relative;
   z-index: 2;
 }
+
+#subscribeform {
+  margin-top: 20px;
+}
+
+input#email {
+  background: url("../img/mail-bg.png") no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #868686;
+  height: 42px;
+  line-height: 40px;
+  margin-right: 10px;
+  padding: 0 0 0 20px;
+  width: 217px;
+}
+
+input#email:focus {
+  color: #f4f4f4;
+}
+
+input#submit {
+  background: url("../img/button.png") no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+  height: 43px;
+  text-shadow: 1px 1px 0 #393939;
+  width: 92px;
+}
+
