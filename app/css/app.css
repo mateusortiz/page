@@ -1,38 +1,43 @@
 /* app css stylesheet */
 
-.table {
-    display: table;
+/* general styles */
+
+body {
+    background-color: #d9d9d9;
 }
 
-.banner {
-    background-image: url(../img/noise.png);
-    width: 100%;
+/* backgrounds */
+
+.background-1 {
+    background-color: #fff;
+}
+
+.background-2 {
+    background-color: #0092df;
+}
+
+.background-3 {
+    background-color: #f14a29;
+}
+
+/* specific styles */
+
+#banner {
     height: 400px;
-    color: #f4f4f4;
-    display: table-cell;
-    vertical-align: middle;   
+    /* temp */
+    background-color: #fff;
 }
 
-.banner h1 {    
-    font-size: 100px;
-    line-height: 1;    
+#weekly {
+    color: #fff;
+    padding: 20px 0px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.banner h3 {
-    font-size: 24px;
-    line-height: 1.25;
-    margin-top: 15px;
-}
-
-#emailForm {
-    margin-top: 30px;
+#weekly h2 {
+    font-size: 3em;
+    font-weight: bold;
 }
 
 
-@media (max-width: 580px) {
-
-    .banner h1 {
-        font-size: 75px;
-    }
-
-}
